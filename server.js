@@ -7,7 +7,7 @@ import 'dotenv/config'
 
 // ! Variables | Constantes
 const app = express()
-const PORT = 8080
+const PORT = process.env.PORT
 const FILENAME = fileURLToPath(import.meta.url)
 const DIRNAME = path.dirname(FILENAME)
 const variablesEntorno = {
